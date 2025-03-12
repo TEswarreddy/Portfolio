@@ -17,7 +17,7 @@ const SocialLinks = () => {
         <h3 className="text-white text-2xl font-bold mb-4">🚀 Project Links</h3>
         <ul className="text-white space-y-3">
           <li>
-            🔗 <a href="https://yourproject1.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition duration-300 text-lg font-medium">
+            🔗 <a href="https://eswarreddy.netlify.app/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition duration-300 text-lg font-medium">
               Portfolio
             </a>
           </li>
