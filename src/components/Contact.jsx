@@ -33,16 +33,16 @@ const Contact = () => {
 
     emailjs
       .send(
-        "service_elg1yyg",
-        "template_2swldve",
+        "service_0ss88dg", //service Id from EmailJs
+        "template_5nimxsd", //service Id from EmailJs
         {
           from_name: form.name,
-          to_name: "T Eswar Reddy",
+          to_name: "T EswarReddy",
           from_email: form.email,
-          to_email: "thathieswarreddy@gmail.com",
+          to_email: "thathireddyeswarreddy3021@gmail.com",
           message: form.message,
         },
-        "yKwBnW-70-5uTyXzO"
+        "mAt-lHBbKqyMi1-2Q"  //// Public Key from EmailJs
       )
       .then(
         () => {
