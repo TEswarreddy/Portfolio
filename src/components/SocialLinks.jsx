@@ -1,58 +1,135 @@
-import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
+import React from "react";
 import { motion } from "framer-motion";
+import {
+  FaFacebookF,
+  FaLinkedinIn,
+  FaInstagram,
+  FaTwitter,
+  FaWhatsapp,
+  FaEnvelope,
+  FaGithub,
+  FaGlobe,
+} from "react-icons/fa6";
+
+const socialLinks = [
+  {
+    id: 1,
+    icon: <FaWhatsapp />,
+    url: "https://wa.me/7416518998",
+    color: "text-green-400",
+  },
+  {
+    id: 2,
+    icon: <FaFacebookF />,
+    url: "https://www.facebook.com/profile.php?id=100093404530865",
+    color: "text-blue-500",
+  },
+  {
+    id: 3,
+    icon: <FaLinkedinIn />,
+    url: "https://www.linkedin.com/in/t-eswarreddy-05b2b3353/",
+    color: "text-blue-700",
+  },
+  {
+    id: 4,
+    icon: <FaInstagram />,
+    url: "https://www.instagram.com/eswar_abbu/",
+    color: "text-pink-500",
+  },
+  {
+    id: 5,
+    icon: <FaTwitter />,
+    url: "https://x.com/EswarReddyT3",
+    color: "text-blue-400",
+  },
+  {
+    id: 6,
+    icon: <FaEnvelope />,
+    url: "mailto:thathireddyeswarreddy3021@gmail.com",
+    color: "text-red-500",
+  },
+];
+
+const projectLinks = [
+  {
+    id: 1,
+    name: "Portfolio",
+    url: "https://eswarreddy.netlify.app/",
+    icon: <FaGlobe />,
+    color: "text-yellow-400",
+  },
+  {
+    id: 2,
+    name: "Quiz App",
+    url: "https://your-quiz-app-link.com",
+    icon: <FaGithub />,
+    color: "text-gray-400",
+  },
+  {
+    id: 3,
+    name: "Spotify Playlist Maker",
+    url: "https://your-spotify-app-link.com",
+    icon: <FaGlobe />,
+    color: "text-green-400",
+  },
+];
 
 const SocialLinks = () => {
   return (
-    <motion.div 
-      initial={{ opacity: 0, y: 50 }} 
-      animate={{ opacity: 1, y: 0 }} 
-      transition={{ duration: 1 }} 
-      className="relative w-full flex flex-col items-center mt-12 px-8"
+    <motion.footer
+      initial={{ opacity: 0, y: 50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6, ease: "easeInOut" }}
+      className="text-white py-10 px-4 text-center"
     >
-      {/* Project Links - Shifted Right to Align with Contact Form */}
-      <motion.div 
-        whileHover={{ scale: 1.05 }} 
-        className="absolute -top-20 left-[20%] transform -translate-x-1/2 bg-white/10 backdrop-blur-lg p-6 rounded-xl shadow-lg border border-white/20"
-      >
-        <h3 className="text-white text-2xl font-bold mb-4">🚀 Project Links</h3>
-        <ul className="text-white space-y-3">
-          <li>
-            🔗 <a href="https://eswarreddy.netlify.app/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition duration-300 text-lg font-medium">
-              Portfolio
-            </a>
-          </li>
-          <li>
-            🔗 <a href="https://yourproject2.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition duration-300 text-lg font-medium">
-              Project 2
-            </a>
-          </li>
-          <li>
-            🔗 <a href="https://yourproject3.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition duration-300 text-lg font-medium">
-              Project 3
-            </a>
-          </li>
-        </ul>
-      </motion.div>
+      {/* Project Links Section */}
+      <h3 className="text-lg md:text-xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-red-400 mb-4">
+        My Projects
+      </h3>
 
-      {/* Social Media Links - Floating Card on Bottom Right */}
-      <motion.div 
-        whileHover={{ scale: 1.05 }} 
-        className="fixed bottom-6 right-6 bg-white/10 backdrop-blur-lg p-6 rounded-xl shadow-lg border border-white/20 flex flex-col items-center gap-4"
-      >
-        <h3 className="text-white text-xl font-bold">📢 Connect with Me</h3>
-        <div className="flex gap-4">
-          <a href="https://github.com/teswarreddy" target="_blank" rel="noopener noreferrer">
-            <FaGithub size={45} className="text-white hover:text-gray-400 transition duration-300 transform hover:scale-125" />
-          </a>
-          <a href="https://www.linkedin.com/in/t-eswarreddy-05b2b3353" target="_blank" rel="noopener noreferrer">
-            <FaLinkedin size={45} className="text-white hover:text-blue-400 transition duration-300 transform hover:scale-125" />
-          </a>
-          <a href="https://www.instagram.com/eswar_abbu/" target="_blank" rel="noopener noreferrer">
-            <FaInstagram size={45} className="text-white hover:text-pink-400 transition duration-300 transform hover:scale-125" />
-          </a>
-        </div>
-      </motion.div>
-    </motion.div>
+      <div className="flex flex-wrap justify-center gap-6 mb-6">
+        {projectLinks.map((project) => (
+          <motion.a
+            key={project.id}
+            href={project.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            whileHover={{ scale: 1.1 }}
+            className="flex items-center gap-2 bg-gray-800 px-4 py-2 rounded-lg shadow-lg hover:bg-opacity-80 transition-all duration-300"
+          >
+            <span className={`text-xl ${project.color}`}>{project.icon}</span>
+            <span className="text-white font-medium">{project.name}</span>
+          </motion.a>
+        ))}
+      </div>
+
+      {/* "Let's Connect!" Title */}
+      <h2 className="text-xl md:text-2xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-green-400 mb-6">
+        Let's Connect!
+      </h2>
+
+      {/* Social Media Links */}
+      <div className="flex justify-center gap-6 mb-6">
+        {socialLinks.map((link) => (
+          <motion.a
+            key={link.id}
+            href={link.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            whileHover={{ scale: 1.2, rotate: 5 }}
+            whileTap={{ scale: 0.9 }}
+            className={`p-3 rounded-full bg-gray-800 ${link.color} hover:bg-opacity-80 shadow-lg transition-all duration-300 text-2xl`}
+          >
+            {link.icon}
+          </motion.a>
+        ))}
+      </div>
+
+      {/* Copyright */}
+      <p className="text-sm text-gray-400">
+        © 2025 <span className="text-blue-400 font-semibold">T.EswarReddy</span>. All Rights Reserved.
+      </p>
+    </motion.footer>
   );
 };
 
