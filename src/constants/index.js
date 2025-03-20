@@ -25,6 +25,8 @@ import {
     java,
     aws,
     portfolio,
+    GreatHire,
+    music_time_machine,
   } from "../assets";
   
   // navbar links
@@ -188,6 +190,50 @@ import {
       image: portfolio,
       source_code_link: "https://github.com/TEswarreddy/Portfolio",
     },
+    {
+      name: "Music Time Machine",
+      description:
+        "This app lets you travel back in time and discover what songs were playing on the radio on any date in history. Just enter a date, and you can even add those songs to your Spotify playlist! 🎶",
+      tags: [
+        {
+          name: "React",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Python-FastAPI",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Spotify API",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: music_time_machine,
+      source_code_link: "https://github.com/TEswarreddy/Music_time_machine",
+    },
+    {
+      name: "GreatHire",
+      description:
+        "🚀 GreatHire.in is a web app that simplifies hiring by connecting job seekers with top employers. You can explore jobs, showcase your skills, and apply easily through a seamless interface.",
+      tags: [
+        {
+          name: "React",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Node.js",
+          color: "green-text-gradient",
+        },
+        {
+          name: "MongoDB",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: GreatHire,
+      source_code_link: "https://greathire.in/",
+
+    },
+    
   ];
   
   export { services, technologies,experiences,testimonials, projects };

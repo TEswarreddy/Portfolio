@@ -30,6 +30,8 @@ import grantleyEdutech from "./company/grantleyEdutech.png";
 
 //project photos
 import portfolio from "./project/portfolio.png";
+import music_time_machine from "./project/music_time_machine.png";
+import GreatHire from "./project/GreatHire.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -65,5 +67,7 @@ export {
   java,
   aws,
   portfolio,
+  GreatHire,
+  music_time_machine,
   grantleyEdutech,
 };

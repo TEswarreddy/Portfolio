@@ -9,6 +9,7 @@ import {
   FaEnvelope,
   FaGithub,
   FaGlobe,
+  FaMusic,
 } from "react-icons/fa6";
 
 const socialLinks = [
@@ -60,15 +61,15 @@ const projectLinks = [
   },
   {
     id: 2,
-    name: "Quiz App",
-    url: "https://your-quiz-app-link.com",
-    icon: <FaGithub />,
+    name: "Music Time Machine",
+    url: "https://music-time-machine.netlify.app/",
+    icon: <FaMusic />,
     color: "text-gray-400",
   },
   {
     id: 3,
-    name: "Spotify Playlist Maker",
-    url: "https://your-spotify-app-link.com",
+    name: "GreatHire",
+    url: "https://greathire.in/",
     icon: <FaGlobe />,
     color: "text-green-400",
   },
