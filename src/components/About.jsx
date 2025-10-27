@@ -7,7 +7,7 @@ import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 
-const ServiceCard = ({ index, title, icon }) => (
+const ServiceCard = ({ index, title, icon ,tech}) => (
   <Tilt className="xs:w-[250px] w-full">
     <motion.div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
@@ -30,6 +30,9 @@ const ServiceCard = ({ index, title, icon }) => (
         <h3 className="text-white text-[20px] font-bold text-center">
           {title}
         </h3>
+        <h4 className="text-white text-[14px] font-bold text-center">
+          {tech}
+        </h4>
       </div>
     </motion.div>
   </Tilt>
@@ -45,18 +48,18 @@ const About = () => {
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
+        className="mt-4 text-secondary text-[17px] max-w-7xl leading-[30px]"
       >
-        I'm a skilled with
-        Python,Java,AWS,JavaScript, and expertise in frameworks like React, Node.js.
-        I'm a quick learner and collaborate closely with clients to
-        create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. Let's work together to bring your ideas to life!
+        I’m a passionate Computer Science student with strong skills in software development, machine learning, and deep learning. I have hands-on experience working with multiple programming languages including Java, Python, JavaScript, and C, and I build scalable web applications using modern technologies like React.js, Node.js, and the Spring Framework.
+        <br></br>
+        My technical interests span from full-stack web development to artificial intelligence. I enjoy solving data structure and algorithmic problems, developing intelligent machine learning models, and implementing deep learning architectures using TensorFlow and Keras.
+        <br></br>
+        I’m driven by curiosity and a desire to create impactful digital solutions — whether it’s crafting efficient backend systems, designing interactive UIs, or building AI-powered applications that make a difference.
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">
         {services.map((service, index) => (
-          <ServiceCard key={service.title} index={index} {...service} />
+          <ServiceCard key={service.title} index={index} tech={service.tech} {...service} />
         ))}
       </div>
     </>

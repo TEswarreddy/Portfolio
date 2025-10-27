@@ -73,6 +73,13 @@ const projectLinks = [
     icon: <FaGlobe />,
     color: "text-green-400",
   },
+  {
+    id: 3,
+    name: "Predicting Liver Cirhosis",
+    url: "predicting-liver-cirrhosis.netlify.app/",
+    icon: <FaGlobe />,
+    color: "text-yellow-400",
+  },
 ];
 
 const SocialLinks = () => {

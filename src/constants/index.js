@@ -3,30 +3,13 @@ import {
     backend,
     creator,
     web,
-    javascript,
-    typescript,
-    html,
-    css,
-    reactjs,
-    redux,
-    tailwind,
-    nodejs,
-    mongodb,
-    git,
-    figma,
-    docker,
     greathire,
     grantleyEdutech,
-    carrent,
-    jobit,
-    tripguide,
-    threejs,
-    python,
-    java,
-    aws,
     portfolio,
     GreatHire,
+    smartBridge,
     music_time_machine,
+    liver_cirrhosis
   } from "../assets";
   
   // navbar links
@@ -54,84 +37,31 @@ import {
     {
       title: "Web Developer",
       icon: web,
+      tech: "(Node.js,React.js)"
     },
-    {
-      title: "React.js Developer",
-      icon: mobile,
-    },
-    {
-      title: "Node.js Developer",
-      icon: backend,
-    },
-    {
-      title: "Javscript Developer",
-      icon: creator,
-    },
+    // {
+    //   title: "React.js Developer",
+    //   icon: mobile,
+    // },
     {
       title: "Java Developer",
-      icon: creator,
+      icon: backend,
+      tech:"(Spring,JDBC,DataStructures & Algorithms,OOPS)"
     },
     {
-      title: "python Developer",
+      title: "Python Developer",
       icon: creator,
+      tech:"(WebScraping,Flask,FastApi,OOPS)"
     },
+    {
+      title: "Machine Learning & Deep Learning ",
+       icon: creator,
+       tech:"(Statistics,Machine Learning Algorithms,Keras,TensorFlow)"
+   },
   ];
   
   // Technologies provided
-  const technologies = [
-    {
-      name: "HTML 5",
-      icon: html,
-    },
-    {
-      name: "CSS 3",
-      icon: css,
-    },
-    {
-      name: "JavaScript",
-      icon: javascript,
-    },
-    {
-      name: "React JS",
-      icon: reactjs,
-    },
-    {
-      name: "Tailwind CSS",
-      icon: tailwind,
-    },
-    {
-      name: "Node JS",
-      icon: nodejs,
-    },
-    {
-      name: "MongoDB",
-      icon: mongodb,
-    },
-    {
-      name: "git",
-      icon: git,
-    },
-    {
-      name: "Python",
-      icon: python,
-    },
-    {
-      name: "Java",
-      icon: java,
-    },
-    {
-      name: "AWS",
-      icon: aws,
-    },
-    // {
-    //   name: "figma",
-    //   icon: figma,
-    // },
-    // {
-    //   name: "docker",
-    //   icon: docker,
-    // },
-  ];
+  
   
   // Experiences
   const experiences = [
@@ -153,7 +83,7 @@ import {
       company_name: "GreatHire",
       icon: greathire,
       iconBg: "#383E56",
-      date: "Febuary 2025 - Now",
+      date: "Febuary 2025 - May 2025",
       points: [
         "Designing and implementing a comprehensive full-stack job portal application, GreatHire, utilizing React for the frontend,Node.js for backend development, and MongoDB for database management to facilitate optimal matching between candidates and recruiters. ",
         "Collaborating with a cross-functional team to ensure the delivery of high-quality features, minimize code conflicts, and uphold consistent coding standards throughout the project.",
@@ -161,6 +91,21 @@ import {
         "Employing React and Tailwind CSS to create intuitive and responsive user interfaces, while leveraging Node.js for backend service implementation and MongoDB for robust data management.",
       ],
     },
+    {
+      title: "Artificial Intelligence and Machine Learning Intern",
+      company_name: "SmartBridge Educational Services Pvt.Ltd.",
+      icon: smartBridge,
+      iconBg: "#383E56",
+      date: "June 2025 - July 2025",
+      points: [
+        "Led a 5-member team as Team Lead under SmartBridge’s internship program.",
+        "Developed an end-to-end ML solution to predict liver cirrhosis using non-invasive clinical and lab data.",
+        "Built and deployed a full-stack web application using Python (Flask) for the backend and React for the frontend.",
+        "Integrated model with APIs to provide real-time predictions and user-friendly interfaces.",
+        "Improved prediction accuracy through feature engineering and model tuning.",
+        "Deployed the solution using Netlify (frontend) and Render (backend).",
+      ],
+    }
     
   ];
 
@@ -214,7 +159,7 @@ import {
     {
       name: "GreatHire",
       description:
-        "🚀 GreatHire.in is a web app that simplifies hiring by connecting job seekers with top employers. You can explore jobs, showcase your skills, and apply easily through a seamless interface.",
+        "GreatHire.in is a web app that simplifies hiring by connecting job seekers with top employers. You can explore jobs, showcase your skills, and apply easily through a seamless interface.",
       tags: [
         {
           name: "React",
@@ -230,10 +175,36 @@ import {
         },
       ],
       image: GreatHire,
-      source_code_link: "https://greathire.in/",
+      source_code_link: "https://github.com/TEswarreddy/GreatHire.git",
 
     },
+    {
+      name: "Predicting Liver Cirrhosis",
+      description:
+        "Built a machine learning model in Python to help detect liver disease early using patient data. Worked on making the solution easy to use, low-cost, and more accurate for real healthcare use. ",
+      tags: [
+        {
+          name: "Machine Learning Algorithms",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Flask",
+          color: "green-text-gradient",
+        },
+        {
+          name: "HTML",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "CSS",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: liver_cirrhosis,
+      source_code_link: "https://github.com/TEswarreddy/Predicting-Liver-Cirrhosis-Using-Advanced-Machine-Learning-Techniques.git",
+
+    }
     
   ];
   
-  export { services, technologies,experiences,testimonials, projects };
+  export { services,experiences,testimonials, projects };
