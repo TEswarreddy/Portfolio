@@ -50,7 +50,7 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-7xl leading-[30px]"
       >
-        I’m a passionate Computer Science student with strong skills in software development, machine learning, and deep learning. I have hands-on experience working with multiple programming languages including Java, Python, JavaScript, and C, and I build scalable web applications using modern technologies like React.js, Node.js, and the Spring Framework.
+        I’m a passionate Computer Science student with skills in software development, machine learning, and deep learning. I have hands-on experience working with multiple programming languages including Java, Python, JavaScript, and C, and I build scalable web applications using modern technologies like React.js, Node.js, and the Spring Framework.
         <br></br>
         My technical interests span from full-stack web development to artificial intelligence. I enjoy solving data structure and algorithmic problems, developing intelligent machine learning models, and implementing deep learning architectures using TensorFlow and Keras.
         <br></br>
