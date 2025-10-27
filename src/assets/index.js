@@ -37,6 +37,7 @@ import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
+import eswar from "./eswar.png"
 export {
   logo,
   backend,
@@ -70,4 +71,5 @@ export {
   GreatHire,
   music_time_machine,
   grantleyEdutech,
+  eswar
 };
